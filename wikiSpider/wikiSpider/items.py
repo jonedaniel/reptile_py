@@ -12,3 +12,12 @@ class Article(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     title = scrapy.Field()
+
+
+class HeadNote(scrapy.Item):
+    note = scrapy.Field()
+
+class YouNote(scrapy.Item):
+    createdTime = scrapy.Field()
+    theme = scrapy.Field()
+    reply = scrapy.Field()
