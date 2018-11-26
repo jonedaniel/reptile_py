@@ -16,7 +16,6 @@ class HeadNoteCrawl(scrapy.Spider):
 
 
     name = "headNote"
-    allowed_domains = ["tieba.baidu.com"]
     start_urls = urlGen()
 
     def parse(self, response):
